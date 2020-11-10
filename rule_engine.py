@@ -21,7 +21,7 @@ def run_query(bigquery, sql, output):
     query_job = client.query(sql, job_config=job_config)  # Make an API request.
     query_job.result()  # Wait for the job to complete.
 
-    print("Query results loaded to the table {}".format(output))
+    print("Query results dev branch loaded to the table {}".format(output))
 
 
 def create_table_name(project, dataset, table_prefix, table_name):
